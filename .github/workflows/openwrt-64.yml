@@ -62,7 +62,6 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/Ameykyl/luci-app-koolproxyR
-          git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git
 
       - name: Update feeds
         run: |
@@ -174,7 +173,6 @@ jobs:
           # CONFIG_PACKAGE_luci-app-wireguard=y
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-koolproxyR=y
-          CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
           EOF
 
           # LuCI主题:
